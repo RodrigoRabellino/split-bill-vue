@@ -52,6 +52,7 @@ const handleChange = (e) => {
   font-size: 20px;
   overflow: hidden;
   background-color: white;
+  border-bottom: 10px solid violet;
 }
 .name__container {
   display: flex;
@@ -60,11 +61,10 @@ const handleChange = (e) => {
 }
 .person__paid {
   transition: 0.4s;
-  background-color: rgb(173, 255, 47, 0.3);
+  border-bottom: 10px solid rgb(173, 255, 47);
 }
 .person__no__paid {
   transition: 0.4s;
-  background-color: rgba(153, 153, 153, 0.4);
 }
 .person__to__pay {
   width: 100%;

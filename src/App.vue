@@ -2,7 +2,15 @@
 import SplitBillView from "./components/SplitBillView.vue";
 </script>
 <template>
-  <SplitBillView />
+  <div class="app">
+    <SplitBillView />
+  </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.app {
+  width: 100vw;
+  height: 100vh;
+  background-color: #eaeaeaea;
+}
+</style>
