@@ -4,7 +4,7 @@ const props = defineProps(["title", "value"]);
 </script>
 
 <template>
-  <div>
+  <div class="container">
     <span class="title">{{ props.title }}</span>
     <span class="value">{{
       new Intl.NumberFormat("en-US", {
@@ -17,9 +17,11 @@ const props = defineProps(["title", "value"]);
 
 <style scoped>
 .title {
+  font-size: 25px;
   font-weight: bolder;
 }
 .value {
+  font-size: 25px;
   color: rgb(36, 48, 14);
   font-weight: 600;
 }
