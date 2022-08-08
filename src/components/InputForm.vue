@@ -1,0 +1,38 @@
+<script setup>
+import { ref } from "vue";
+import { store, calculate } from "@/store/store";
+
+const total = ref(0);
+const tip = ref(0);
+const people = ref(0);
+
+const handleSubmit = () => {
+  store.params.total = total;
+  store.params.tip = tip;
+  store.params.people = people;
+  calculate();
+};
+</script>
+<template>
+  <form action="" @submit.prevent="handleSubmit">
+    <div class="form__container">
+      <div>
+        <label for="total"> Total </label>
+        <input type="number" name="total" required v-model="total" />
+      </div>
+      <div>
+        <label for="tip"> Tip % </label>
+        <input type="number" name="tip" required v-model="tip" />
+      </div>
+      <div>
+        <label for="people"> Total People</label>
+        <input type="number" name="people" required v-model="people" />
+      </div>
+      <div>
+        <input type="submit" value="calculate" />
+      </div>
+    </div>
+  </form>
+</template>
+
+<style scoped></style>
